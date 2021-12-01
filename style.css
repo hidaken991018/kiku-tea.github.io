@@ -25,21 +25,6 @@ img {
 
 /* //レイアウト */
 
-/* .header-wrap {
-    height: 100vh;
-    position: relative;
-} */
-/* .header-container {
-    max-width: 1100px;
-    margin: 0 auto;
-} */
-/* .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
-} */
-
 .header-nav > ul {
     display: flex;
 }
@@ -75,42 +60,18 @@ img {
     margin: 0 auto;
 }
 
-.garally-title, .member-title, .title{
-    font-size: 38px;
-    margin-bottom: 90px;
-    padding-left: 10%;
-}
-
-.flexbox {
-    display: flex;
-}
-
-.garally-content, .member-content {
-    width: 33%;
-    text-align: center;
-}
-
-.garally-content_img, .member-content_img {
-    max-width: 430px;
-    margin: 0 auto;
-}
-
 .garally-btn, .member-btn{
     text-align: center;
     margin-top: 80px;
 }
 
-.garally-btn a, .member-btn a {
+.garally-btn a, .member-btn > a {
     text-decoration: none;
     border: 1px solid #000;
     display: inline-block;
     padding: 12px 40px;
     color: #000;
     font-size: 20px;
-}
-.text {
-    text-align: center;
-    line-height: 400%;
 }
 /* ベースグループ （リセットCSS) */
 
@@ -175,19 +136,6 @@ figure,div,p{
     width: 10pc;
     height: 10pc;
 }
-.header-wrap {
-    background-image:url(assets/img/header_bg_img.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.header_sub_text{
-    left: 50%;
-    /* transform:  translate(-50%); */
-    /* width: 100%; */
-    text-align: center;
-    font-size: 20px;
-
-}
 .header_sub2_text{
     left: 50%;
     /* transform:  translate(-50%); */
@@ -197,14 +145,17 @@ figure,div,p{
 }
 
 /* about us フレックスボックス */
-.about_us_wrap {
+.bl_about {
     display: flex;
     justify-content: space-between;
 }
-.about_item {
+.bl_about_description, .bl_about_imgWrap{
     width: 50%;
 }
-
+.bl_about_description > p {
+    text-align: center;
+    line-height: 400%;
+}
 
 /* garally フレックスボックス */
 .bl_holizList_item {
@@ -258,6 +209,15 @@ figure,div,p{
 .footer {
     text-align: center;
 }
+
+
+/* セクションごとのタイトル */
+.el_sectionTitle {
+    font-size: 38px;
+    margin-bottom: 90px;
+    padding-left: 10%;
+}
+
 /*　ヘルパー */
 .hp_bgcGarally {
     background-color:#EDE6DE ;
